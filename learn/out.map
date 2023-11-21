@@ -1,0 +1,495 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+                              main.o (__udivmodhi4)
+/home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+                              /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o (exit)
+/home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+/home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000001000 xr
+data             0x0000000000803f00 0x0000000000000100 rw !x
+eeprom           0x0000000000810000 0x0000000000000080 rw !x
+fuse             0x0000000000820000 0x000000000000000a rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x803f00
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+LOAD main.o
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/libm.a
+START GROUP
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/libm.a
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/libc.a
+LOAD /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/libattiny414.a
+END GROUP
+                [0x0000000000001000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x0000000000000100]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000080]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x000000000000000a]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000008000                __RODATA_PM_OFFSET__ = DEFINED (__RODATA_PM_OFFSET__)?__RODATA_PM_OFFSET__:0x8000
+                [0x0000000000803f00]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x29e
+ *(.vectors)
+ .vectors       0x0000000000000000       0x34 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000034                . = ALIGN (0x2)
+                0x0000000000000034                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000034        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000034                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000000000000034                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000034                __ctors_start = .
+ *(.ctors)
+                0x0000000000000034                __ctors_end = .
+                0x0000000000000034                __dtors_start = .
+ *(.dtors)
+                0x0000000000000034                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000034        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+                0x0000000000000034                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000034        0xc /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000040       0x16 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+                0x0000000000000040                __do_copy_data
+ .init4         0x0000000000000056       0x10 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+                0x0000000000000056                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ .init8         0x0000000000000066       0x46 main.o
+                0x0000000000000066                _Z4initv
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000ac        0x4 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000b0        0x2 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+                0x00000000000000b0                __vector_22
+                0x00000000000000b0                __vector_1
+                0x00000000000000b0                __vector_24
+                0x00000000000000b0                __vector_12
+                0x00000000000000b0                __bad_interrupt
+                0x00000000000000b0                __vector_6
+                0x00000000000000b0                __vector_25
+                0x00000000000000b0                __vector_11
+                0x00000000000000b0                __vector_17
+                0x00000000000000b0                __vector_19
+                0x00000000000000b0                __vector_7
+                0x00000000000000b0                __vector_5
+                0x00000000000000b0                __vector_4
+                0x00000000000000b0                __vector_9
+                0x00000000000000b0                __vector_2
+                0x00000000000000b0                __vector_21
+                0x00000000000000b0                __vector_15
+                0x00000000000000b0                __vector_8
+                0x00000000000000b0                __vector_14
+                0x00000000000000b0                __vector_10
+                0x00000000000000b0                __vector_16
+                0x00000000000000b0                __vector_18
+                0x00000000000000b0                __vector_20
+ .text          0x00000000000000b2      0x1bc main.o
+                0x00000000000000b2                _Z10uart_printPKc
+                0x00000000000000d4                _Z8toStringPcj
+                0x0000000000000110                _Z5printj
+                0x0000000000000158                __vector_23
+                0x00000000000001a8                __vector_13
+                0x0000000000000200                __vector_3
+ .text          0x000000000000026e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text          0x000000000000026e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text          0x000000000000026e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text          0x000000000000026e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+                0x000000000000026e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x000000000000026e        0x4 main.o
+                0x000000000000026e                main
+ .text.libgcc.mul
+                0x0000000000000272        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000272       0x28 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+                0x0000000000000272                __udivmodhi4
+ .text.libgcc   0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc   0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc   0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+                0x000000000000029a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000029a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+                0x000000000000029a                exit
+                0x000000000000029a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000029a        0x4 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000000029e                _etext = .
+
+.rodata
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+
+.data           0x0000000000803f00        0xa load address 0x000000000000029e
+                0x0000000000803f00                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000803f00        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ .data          0x0000000000803f00        0xa main.o
+                0x0000000000803f00                line
+ .data          0x0000000000803f0a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000803f0a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .data          0x0000000000803f0a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .data          0x0000000000803f0a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+                0x0000000000803f0a                . = ALIGN (0x2)
+                0x0000000000803f0a                _edata = .
+                0x0000000000803f0a                PROVIDE (__data_end, .)
+
+.bss            0x0000000000803f0a        0x4
+                0x0000000000803f0a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000803f0a        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ .bss           0x0000000000803f0a        0x4 main.o
+                0x0000000000803f0a                mark
+                0x0000000000803f0c                ptr
+ .bss           0x0000000000803f0e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000803f0e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .bss           0x0000000000803f0e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .bss           0x0000000000803f0e        0x0 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+                0x0000000000803f0e                PROVIDE (__bss_end, .)
+                0x000000000000029e                __data_load_start = LOADADDR (.data)
+                0x00000000000002a8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000803f0e        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000803f0e                _end = .
+                [!provide]                        PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (size before relaxing)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x180e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x1566 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ .debug_info    0x0000000000001566       0xaa /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .debug_info    0x0000000000001610       0xaa /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .debug_info    0x00000000000016ba       0xaa /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .debug_info    0x0000000000001764       0xaa /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+
+.debug_abbrev   0x0000000000000000     0x148e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000     0x143e /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ .debug_abbrev  0x000000000000143e       0x14 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .debug_abbrev  0x0000000000001452       0x14 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .debug_abbrev  0x0000000000001466       0x14 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x000000000000147a       0x14 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+
+.debug_line     0x0000000000000000      0x390
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x136 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+ .debug_line    0x0000000000000136       0xd1 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_udivmodhi4.o)
+ .debug_line    0x0000000000000207       0x65 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_exit.o)
+ .debug_line    0x000000000000026c       0x9b /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_copy_data.o)
+ .debug_line    0x0000000000000307       0x89 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avrxmega3/short-calls/libgcc.a(_clear_bss.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x921
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x921 /home/sylam/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avrxmega3/short-calls/crtattiny414.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(out.elf elf32-avr)
+LOAD linker stubs
