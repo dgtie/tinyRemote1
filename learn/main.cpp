@@ -2,7 +2,9 @@
 
 const char* ptr;
 unsigned mark;
-char line[] = "000 000\r\n";
+char line[] = "000 000\r\n";  // mark and space respectively
+                              // times 0.6 to obtain time in us
+                              // zero space time means end of signal
 
 void __attribute__((used, naked, section(".init8"))) init(void) {
   TCB0.CTRLA = TCB_CLKSEL_CLKDIV2_gc;	// 0.6 us
@@ -14,7 +16,7 @@ void __attribute__((used, naked, section(".init8"))) init(void) {
   TCB0.INTCTRL = TCB_CAPT_bm;
   TCB0.CTRLA |= TCB_ENABLE_bm;
   PORTB.DIRSET = PIN2_bm;
-  USART0.BAUD = 116;
+  USART0.BAUD = 116;              // baud rate = 115200
   USART0.CTRLB = USART_TXEN_bm;
 }
 
